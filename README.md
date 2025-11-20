@@ -1,2 +1,3 @@
-# Linux-Victus-Driver-Utilities
-Begin experimenting making lighting/performance control related utilities for my own victus laptop (model revealed later) by reverse engineering omen gaming hub modules on windows and rewriting it for linux. Dont have hopes high cuz I noob.
+# Linux Omen Hardware ConTroL (LOCTL)
+
+Linux Omen Hardware ConTroL (LOCTL) will be a linux kernel module that completely reimplements Omen Gaming Hub functions (keyboard light rgbs, animations, performance control, undervolting) etc. on linux, preferrably arch linux because it is my trusty and most preferred OS. Imagine not having to boot into Winblow anymore to change bios settings, and having complete control over vendor-specific functionalities without having to play with winbloat XD's rules, how cool! 
