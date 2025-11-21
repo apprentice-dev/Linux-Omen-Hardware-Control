@@ -19,7 +19,6 @@ module_wmi_driver(foo_driver);
 
 
 
-
 //importing bunch of headers that i dont even know if its useful, but as long as it works
 //vibe coder in the blood
 

@@ -1,13 +1,20 @@
 #include "../driver_interface.h" //this already imports all the necessary definitions
 
+#define FUNCTION_GUID "5FB7F034-2C63-45e9-BE91-3D44E2C707E4"
+#define FUNCTION_INSTANCE_INDEX 8
+#define FUNCTION_METHOD_INDEX 3
+
+
 bool enabled = false;
 
 const wmi_device_id omen_id_table[2] = {
 
-  {"936DA01F-9ABD-4D9D-80C7-02AF85C822A8",NULL},
+  {FUNCTION_GUID,NULL},
   {}
 
 };
+
+
 
 
 
@@ -23,4 +30,9 @@ enabled = true;
 void *omenremove(struct wmi_device *wdev) {
   printk("OMEN wmi device unbinded from the driver. This shouldnt happen from my pea-sized experience. It can happen just not the way I perceive it to be.");
   enabled = false;
+}
+
+
+uint8_t execute(int command, int commandType, int inputDataSize, void *inputData, void *returnData){
+      
 }
